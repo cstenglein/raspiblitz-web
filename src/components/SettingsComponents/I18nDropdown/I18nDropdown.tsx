@@ -35,7 +35,7 @@ const I18nDropdown: FC = () => {
           {t('settings.curr_lang')}:&nbsp;<strong>{i18n.language}</strong>
         </div>
         <div className='flex justify-between'>
-          <label htmlFor='lngSelect' className='font-bold'>
+          <label htmlFor='lngSelect' className='font-bold flex items-center'>
             {t('settings.language')}
           </label>
           <select id='lngSelect' ref={selectRef} onChange={dropdownHandler} className='border w-1/3 dark:text-black'>
@@ -50,7 +50,7 @@ const I18nDropdown: FC = () => {
           <button
             onClick={saveLangHandler}
             disabled={!saveLang}
-            className='w-1/3 shadow-xl rounded text-white bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-400'
+            className='w-1/3 shadow-xl rounded text-white bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-400 py-1'
           >
             Save
           </button>
